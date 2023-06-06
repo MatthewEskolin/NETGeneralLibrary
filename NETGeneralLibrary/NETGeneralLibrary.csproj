@@ -1,9 +1,18 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+	  <PackageReadmefile>NuGet.md</PackageReadmefile>
+	  <VersionPrefix>1.0.1</VersionPrefix>
+	  <Title>.NET General Library</Title>
+    <Description>My Personal .NET Library</Description>
   </PropertyGroup>
+
+	<ItemGroup>
+        <None Include="Docs/NuGet.md" Pack="true" PackagePath="\" />
+	</ItemGroup>
 
 </Project>
